@@ -5,7 +5,7 @@ function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer className={footer.footer}>
-      <p>SOCIALZ Copyright &copy; {year}</p>
+      <p>Socialz Copyright &copy; {year}</p>
     </footer>
   );
 }
