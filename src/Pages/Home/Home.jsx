@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   return (
     <section>
-      <h1>Hello</h1>
+      <h1>The best social media site ever, period.</h1>
     </section>
   );
 }
