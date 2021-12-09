@@ -4,10 +4,11 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Home } from "./Pages";
+import { Almighty } from "./Components/Container";
 
 function App() {
   return (
-    <>
+    <Almighty>
       <Router>
         {/* Navbar */}
         <Routes>
@@ -15,7 +16,7 @@ function App() {
         </Routes>
         {/* Footer */}
       </Router>
-    </>
+    </Almighty>
   );
 }
 
