@@ -10,7 +10,7 @@ function Navbar() {
       link: "/",
     },
     {
-      name: "Profilepage",
+      name: "Find friends",
       link: "/",
     },
   ];
