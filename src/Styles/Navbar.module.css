@@ -1,9 +1,18 @@
+@font-face {
+  src: url("./../Assets/Fonts/Library.otf");
+  font-family: "Library";
+}
+
 .navBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
   flex-direction: row;
+}
+
+.navBar *:not(input, button) {
+  font-family: "Library";
 }
 
 .navLogo {

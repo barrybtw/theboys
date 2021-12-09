@@ -16,12 +16,9 @@ function Navbar() {
       <ul className={styles.navList}>
         {/* Buttons */}
         <Link to="/">Homepage</Link>
+        <Link to="/">Profilepage</Link>
+        <Link to="/">Settings</Link>
         {/**/}
-        {/* Search function */}
-        <form action="submit" className="nav-searchbar" onSubmit={HandleSubmit}>
-          <input type="text" placeholder="Search..." />
-          <button>Search</button>
-        </form>
       </ul>
     </nav>
   );
