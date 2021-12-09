@@ -1,3 +1,4 @@
 import { Container } from "react-dom";
-
-export { Container };
+import Navbar from "./Navbar/Navbar";
+import Footer from "./Footer/Footer";
+export { Container, Navbar, Footer };
