@@ -14,10 +14,6 @@ function Navbar() {
       link: "/",
     },
   ];
-  const HandleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Works!");
-  };
   const HandleCreatePost = (e) => {
     e.preventDefault();
     console.log("Lol");
