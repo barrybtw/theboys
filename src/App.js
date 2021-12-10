@@ -1,12 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Home } from "./Pages";
+import { Home, Friends } from "./Pages";
 import { Almighty } from "./Components/Container";
 
 import { Navbar } from "./Components";
 import { Footer } from "./Components";
 import { GlobalStyle } from "./Components/GlobalTheme";
-import Friends from "./Pages/Friends/Friends";
 function App() {
   return (
     <Almighty>
