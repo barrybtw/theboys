@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "./navbar.scss";
-import { BsPatchPlusFill } from "react-icons/bs";
 
 function Navbar() {
   const links = [
@@ -9,7 +8,11 @@ function Navbar() {
       link: "/",
     },
     {
-      name: "Find friends",
+      name: "Blogs",
+      link: "/find-friends",
+    },
+    {
+      name: "Personal Blogs",
       link: "/find-friends",
     },
   ];
@@ -32,7 +35,11 @@ function Navbar() {
               </Link>
             );
           })}
-          <a href="/" className="nav__links--newpost">
+          <a
+            href="/"
+            className="nav__links--newpost"
+            onClick={HandleCreatePost}
+          >
             NEW POST
           </a>
 

@@ -32,7 +32,7 @@
 }
 
 .nav__logo {
-  font-size: 2rem;
+  font-size: min(20px);
 }
 
 .nav__links {
@@ -44,6 +44,7 @@
 
 .nav__links--animated {
   position: relative;
+  font-size: clamp(1rem, 0.6vw, 2rem);
 
   &.nav__links--animated::after {
     content: "";
