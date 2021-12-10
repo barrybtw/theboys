@@ -35,6 +35,7 @@ function Navbar() {
           <a href="/" className="nav__links--newpost">
             NEW POST
           </a>
+
           {/**/}
         </ul>
       </div>
