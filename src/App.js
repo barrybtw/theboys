@@ -6,6 +6,7 @@ import { Almighty } from "./Components/Container";
 import { Navbar } from "./Components";
 import { Footer } from "./Components";
 import { GlobalStyle } from "./Components/GlobalTheme";
+import Friends from "./Pages/Friends/Friends";
 function App() {
   return (
     <Almighty>
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route exact path="/find-friends" element={<Friends />} />
         </Routes>
         <Footer />
       </Router>

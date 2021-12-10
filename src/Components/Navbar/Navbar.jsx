@@ -1,6 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./../../Styles/Navbar.module.css";
+import "./navbar.scss";
 import { BsPatchPlusFill } from "react-icons/bs";
 
 function Navbar() {
@@ -11,7 +10,7 @@ function Navbar() {
     },
     {
       name: "Find friends",
-      link: "/",
+      link: "/find-friends",
     },
   ];
   const HandleCreatePost = (e) => {
@@ -20,28 +19,27 @@ function Navbar() {
   };
 
   return (
-    <nav className={styles.navBar}>
-      {/* Logo */}
-      <div className={styles.navLogo}>SOCIALZ</div>
-
-      {/* List */}
-      <ul className={styles.navList}>
-        {/* Buttons */}
-        {links.map((element) => {
-          const { name, link } = element;
-          return (
-            <Link to={link} className={styles.navAnimated}>
-              {name}
-            </Link>
-          );
-        })}
-        <Link to="/">
-          <BsPatchPlusFill onClick={HandleCreatePost} />
-        </Link>
-        {/**/}
-      </ul>
+    <nav>
+      <div className="nav__container">
+      <div className="nav__logo">SOCIALZ</div>
+        <ul className="nav__links">
+          {/* Buttons */}
+          {links.map((element) => {
+            const { name, link } = element;
+            return (
+              <Link to={link} className="nav__links--animated">
+                {name}
+              </Link>
+            );
+          })}
+          <Link to="/">
+            <BsPatchPlusFill onClick={HandleCreatePost} className="nav__btn"/>
+          </Link>
+          {/**/}
+        </ul>
+      </div>
     </nav>
-  );
+  )
 }
 
 export default Navbar;
