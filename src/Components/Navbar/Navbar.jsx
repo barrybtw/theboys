@@ -21,7 +21,7 @@ function Navbar() {
   return (
     <nav>
       <div className="nav__container">
-      <div className="nav__logo">SOCIALZ</div>
+        <div className="nav__logo">SOCIALZ</div>
         <ul className="nav__links">
           {/* Buttons */}
           {links.map((element) => {
@@ -32,14 +32,14 @@ function Navbar() {
               </Link>
             );
           })}
-          <Link to="/">
-            <BsPatchPlusFill onClick={HandleCreatePost} className="nav__btn"/>
-          </Link>
+          <a href="/" className="nav__links--newpost">
+            NEW POST
+          </a>
           {/**/}
         </ul>
       </div>
     </nav>
-  )
+  );
 }
 
 export default Navbar;
