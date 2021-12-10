@@ -5,3 +5,6 @@ use this as a todo for the team not for yourself
 
 
 ALSO CHECK useColor.js in /hooks folder
+
+
+check ./firebase/f-methods.js  
