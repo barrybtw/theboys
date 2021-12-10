@@ -1,3 +1,7 @@
 Ditch the Assets folder, put the assets relevant to a component in their own folder (better folder structure)
 
 use this as a todo for the team not for yourself
+
+
+
+ALSO CHECK useColor.js in /hooks folder
