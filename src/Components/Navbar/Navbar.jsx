@@ -4,7 +4,7 @@ import "./navbar.scss";
 function Navbar() {
   const links = [
     {
-      name: "Homepage",
+      name: "Home",
       link: "/",
     },
     {
