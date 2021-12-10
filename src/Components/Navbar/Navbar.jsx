@@ -40,7 +40,7 @@ function Navbar() {
             className="nav__links--newpost"
             onClick={HandleCreatePost}
           >
-            NEW POST
+            NEW BLOG
           </a>
 
           {/**/}
