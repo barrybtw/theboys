@@ -42,8 +42,8 @@
     transform-origin: bottom right;
     transition: transform 0.35s ease-out;
   }
-  
-   &.nav__links--animated:hover::after {
+
+  &.nav__links--animated:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
@@ -54,9 +54,4 @@
   display: block;
   font-size: 1.25rem;
   cursor: pointer;
-
-  &:hover {
-    font-size: 2rem;
-  }
-  
 }
