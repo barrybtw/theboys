@@ -5,3 +5,5 @@ app.use(express.json());
 app.get("/", (req, res) => {
 	res.send("xin chao");
 });
+
+app.listen(5000);
