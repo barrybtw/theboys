@@ -16,10 +16,6 @@ function Navbar() {
       link: "/find-friends",
     },
   ];
-  const HandleCreatePost = (e) => {
-    e.preventDefault();
-    console.log("Lol");
-  };
 
   return (
     <nav>
@@ -35,13 +31,9 @@ function Navbar() {
               </Link>
             );
           })}
-          <a
-            href="/"
-            className="nav__links--newpost"
-            onClick={HandleCreatePost}
-          >
+          <Link to="new-blog" className="nav__links--newpost">
             NEW BLOG
-          </a>
+          </Link>
 
           {/**/}
         </ul>

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Home, Friends } from "./Pages";
+import { Home, Friends, NewBlog } from "./Pages";
 import { Almighty } from "./Components/Container";
 
 import { Navbar } from "./Components";
@@ -14,6 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/new-blog" element={<NewBlog />} />
           <Route exact path="/find-friends" element={<Friends />} />
         </Routes>
         <Footer />
